@@ -1,0 +1,1 @@
+webpackJsonp([1],{97:function(e,n,o){const r=o(34),t=o(33);o(!function(){var e=new Error('Cannot find module "src/service.js"');throw e.code="MODULE_NOT_FOUND",e}()).run(),t.render(r.createElement("h1",null,"Hello, world!"),document.getElementById("root"))}},[97]);
