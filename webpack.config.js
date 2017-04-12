@@ -8,16 +8,27 @@ module.exports = {
   entry: {
 	main:'./src/app.jsx',
 	react:['react','react-dom'],
+	service:'./src/service.js',
+	serviceTest:'./src/service/test.js',
 	},
   output: {
     	//filename: 'dist/bundle.js',
-    	filename: 'dist/bundle-[chunkhash:8].js',
+    	//filename: 'dist/[name]-[chunkhash:8].js',
+    	filename: 'dist/[name].js',
 	path: path.resolve(__dirname, 'public')
+	
   },
 	//externals: {
      	//	'react': 'React'
   	//},
 	 module: {
+		rules:[	
+			{
+				 test: /\.js$/,
+				 exclude: /(node_modules)/,
+				 use: ["balel-loader"]
+			}
+		],
 		rules:[	
 			{
 				 test: /\.jsx$/,
@@ -41,9 +52,18 @@ module.exports = {
 	new HtmlWebpackPlugin({
 		title: 'FireFly',
 		template: 'src/index.html',
-		minify: { collapseWhitespace:true},
+		excludeChunks:['test']
+	//	minify: { collapseWhitespace:true},
 	})
 
-]
+	],
+	resolve: {
+		 extensions: ['.js', '.json', '.coffee','jsx'],
+		 modules: [
+     			"node_modules",
+      			path.resolve(__dirname, "src")
+    		],
+	}
+	
 }
 
