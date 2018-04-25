@@ -1,0 +1,11 @@
+{
+  version:"0.1.0",
+  body:{
+     repertory:[
+        {
+          name:"github",
+          url:"https://github.com/lemonadezZ/Firefly/main.json"
+        }
+       ]
+    }
+}
