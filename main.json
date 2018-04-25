@@ -1,27 +1,32 @@
 {
-  "version":"0.1.0",
-  "body":{
-     "repertory":[
-        {
-          "name":"github",
-          "url":"https://github.com/lemonadezZ/Firefly/blob/manifest/main.json"
-        }
-       ],
-     "stack":[
-        "lnmp":{
-            "application":[
-                "php":{
-                  "version":[
-                    "5.5","5.6","7.0","7.1" 
-                  ]
-                },
-                "mysql":{
-                   "version":[
-                     '5.5','5.6','5.7','7.0','8.0'
-                    ]
-                }
-             ]
-          }
-      ]
+	"version": "0.1.0",
+	"body": {
+		"repertory": [{
+			"name": "github",
+			"url": "https://github.com/lemonadezZ/Firefly/blob/manifest/main.json"
+		}],
+    "project":{
+      "php":"",
+      "mysql":"",
+      "mongodb":"",
+      "apache":"",
+      "nginx":"",
+      "lighttpd":"",
+      "varnish":""
     }
+		"stack": {
+			"lnmp": {
+				"application": {
+					"php": {
+						"version": ["5.5", "5.6", "7.0", "7.1"],
+             "script":["start","stop","reload"]
+					},
+					"mysql": {
+						"version": ["5.5", "5.6", "5.7", "7.0", "8.0"],
+            "script":["start","stop","reload"]
+					}
+				}
+			}
+		}
+	}
 }
