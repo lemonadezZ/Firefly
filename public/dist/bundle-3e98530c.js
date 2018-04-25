@@ -1,1 +1,0 @@
-webpackJsonp([0],{97:function(e,t,c){React=c(34),ReactDOM=c(33),ReactDOM.render(React.createElement("h1",null,"Hello, world!"),document.getElementById("root"))}},[97]);

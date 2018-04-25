@@ -1,1 +1,0 @@
-webpackJsonp([0],{183:function(e,n){throw new Error("Module parse failed: /home/firefly/src/service.js Unexpected token (1:16)\nYou may need an appropriate loader to handle this file type.\n| module.exports()=>{\n| \treturn {\n| \t\trun()=>{")}},[183]);

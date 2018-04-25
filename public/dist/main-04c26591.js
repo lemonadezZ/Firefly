@@ -1,1 +1,0 @@
-webpackJsonp([0],{98:function(e,o,n){const l=n(34),t=n(33),c=n(83);console.log(c),t.render(l.createElement("h1",null,"Hello, world!"),document.getElementById("root"))}},[98]);

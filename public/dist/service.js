@@ -1,1 +1,0 @@
-webpackJsonp([2],{33:function(o,n){o.exports=function(){return console.log("init..."),{run:function(){"serviceWorker"in navigator?navigator.serviceWorker.register("dist/service/test.js",{}).then(function(){console.log("正常执行")}).catch(function(o){console.log(o)}):console.log("浏览器不支持降级处理")}}}}},[33]);
