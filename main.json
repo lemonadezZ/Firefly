@@ -13,8 +13,8 @@
       "nginx":"",
       "lighttpd":"",
       "varnish":""
-    }
-		"stack": {
+    },
+	"stack": {
 			"lnmp": {
 				"application": {
 					"php": {
